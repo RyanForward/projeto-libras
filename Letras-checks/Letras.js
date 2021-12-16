@@ -19,8 +19,7 @@ function funcao(letra1, letra2){
                     score += streak
                 }
                 score += getRandomInt(1, 10)
-                if(streak>2)
-                        alert(' Resposta certa! \n Seu score é: ' + score)
+                alert(' Resposta certa! \n Seu score é: ' + score)
                 }
     
         else{
