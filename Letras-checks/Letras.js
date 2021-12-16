@@ -1,4 +1,5 @@
 let score = 0
+let streak = 0
 
 function getRandomInt(min, max) {
         min = Math.ceil(min);
@@ -11,15 +12,20 @@ function mostraScore(){
 }
 
 function funcao(letra1, letra2){
-        let letra = prompt ("digite qual letra é essa:")
+        let letra = prompt ("Digite qual letra é essa: ")
         if (letra == letra1 || letra == letra2){
-                alert("Resposta certa")
+            streak++
+                if(streak>2){
+                    score += streak
+                }
                 score += getRandomInt(1, 10)
+                if(streak>2)
+                        alert(' Resposta certa! \n Seu score é: ' + score)
                 }
     
         else{
-                alert("Resposta Errada! Essa é a letra " + letra1)
+                streak = 0
                 score -= getRandomInt(2, 8)
+                alert("Resposta Errada! Essa é a letra " + letra1 + '\nSeu score é: ' + score)
                 }
-        mostraScore()
 }
