@@ -24,7 +24,7 @@ function funcao(letra1, letra2){
     
         else{
                 streak = 0
-                if (score>0){
+                if(score>0){
                     score -= 1
                 }
                 alert("Resposta Errada! Essa é a letra " + letra1 + '\nSeu score é: ' + score)
