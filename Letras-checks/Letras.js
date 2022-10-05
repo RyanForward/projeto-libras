@@ -1,9 +1,4 @@
 let score = 0
-function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-      }
 function mostraScore(){
         alert(`O seu score atual é:  ${score}`)
 }
